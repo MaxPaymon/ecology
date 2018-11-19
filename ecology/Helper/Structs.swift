@@ -6,4 +6,25 @@
 //  Copyright © 2018 Maxim Skorynin. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct Storyboard {
+    static let main = UIStoryboard(name: "Main", bundle: Bundle.main)
+}
+
+struct Vc {
+    static let mainNavigationController = "MainNavigationController"
+    static let detailedNewsViewController = "DetailedNewsViewController"
+}
+
+struct Xml {
+    static let news = "news"
+    static let item = "item"
+    static let title = "title"
+    static let description = "description"
+    static let shortdescription = "shortdescription"
+    static let date = "date"
+    static let time = "time"
+    static let croppedPicture = "croppedpicture"
+    static let picture = "picture"
+}

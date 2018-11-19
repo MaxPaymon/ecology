@@ -6,4 +6,6 @@
 //  Copyright © 2018 Maxim Skorynin. All rights reserved.
 //
 
-import Foundation
+struct Constants {
+    static let url = "file:///Users/maximskorynin/Documents/Work/freelance/Ecology%20project/test/ecology.rss"
+}

@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48014ECAF3AD0667D6EB3931 /* Pods_ecologyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303FD161BF0A3DCA3A4C9287 /* Pods_ecologyUITests.framework */; };
+		5CC08F3582DE2DB892D26444 /* Pods_ecology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CC36FA34A94104AC896AC0 /* Pods_ecology.framework */; };
+		A8E8111437A61AFABB479240 /* Pods_ecologyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B08FD491048CA28E010163 /* Pods_ecologyTests.framework */; };
 		B00E435C219F0C84004ECC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E435B219F0C84004ECC89 /* AppDelegate.swift */; };
-		B00E435E219F0C84004ECC89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E435D219F0C84004ECC89 /* ViewController.swift */; };
+		B00E435E219F0C84004ECC89 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E435D219F0C84004ECC89 /* LaunchViewController.swift */; };
 		B00E4361219F0C84004ECC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00E435F219F0C84004ECC89 /* Main.storyboard */; };
 		B00E4363219F0C85004ECC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00E4362219F0C85004ECC89 /* Assets.xcassets */; };
 		B00E4366219F0C85004ECC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00E4364219F0C85004ECC89 /* LaunchScreen.storyboard */; };
 		B00E4371219F0C85004ECC89 /* ecologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E4370219F0C85004ECC89 /* ecologyTests.swift */; };
 		B00E437C219F0C85004ECC89 /* ecologyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E437B219F0C85004ECC89 /* ecologyUITests.swift */; };
+		B00E4390219F10EF004ECC89 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E438F219F10EF004ECC89 /* News.swift */; };
+		B00E4393219F1204004ECC89 /* ParseNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E4392219F1204004ECC89 /* ParseNews.swift */; };
+		B00E4395219F1228004ECC89 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00E4394219F1228004ECC89 /* NewsCell.xib */; };
+		B00E4397219F1621004ECC89 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E4396219F1621004ECC89 /* NewsTableViewCell.swift */; };
+		B00E4399219F198D004ECC89 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E4398219F198D004ECC89 /* NewsTableViewController.swift */; };
+		B00E439B219F1CC1004ECC89 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E439A219F1CC1004ECC89 /* MainNavigationController.swift */; };
+		B00E439F219F4C27004ECC89 /* DetailedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E439E219F4C27004ECC89 /* DetailedNewsViewController.swift */; };
+		B0E99EA221A2BFB30043BC61 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E99EA121A2BFB30043BC61 /* Structs.swift */; };
+		B0E99EA421A2C0950043BC61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E99EA321A2C0950043BC61 /* Constants.swift */; };
+		B0E99EA621A2C3AC0043BC61 /* example.rss in Resources */ = {isa = PBXBuildFile; fileRef = B0E99EA521A2C3AC0043BC61 /* example.rss */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05CC36FA34A94104AC896AC0 /* Pods_ecology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		303FD161BF0A3DCA3A4C9287 /* Pods_ecologyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecologyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47528CAC43CEED4CB77D79A1 /* Pods-ecologyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecologyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecologyUITests/Pods-ecologyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		528E3C4893EF326417B13C57 /* Pods-ecologyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecologyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ecologyUITests/Pods-ecologyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		70A0342E2FCAE2B99D50A97E /* Pods-ecologyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecologyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ecologyTests/Pods-ecologyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0B08FD491048CA28E010163 /* Pods_ecologyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecologyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00E4358219F0C84004ECC89 /* ecology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00E435B219F0C84004ECC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B00E435D219F0C84004ECC89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B00E435D219F0C84004ECC89 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		B00E4360219F0C84004ECC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B00E4362219F0C85004ECC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00E4365219F0C85004ECC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +66,19 @@
 		B00E4377219F0C85004ECC89 /* ecologyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ecologyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00E437B219F0C85004ECC89 /* ecologyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ecologyUITests.swift; sourceTree = "<group>"; };
 		B00E437D219F0C85004ECC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00E438F219F10EF004ECC89 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		B00E4392219F1204004ECC89 /* ParseNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseNews.swift; sourceTree = "<group>"; };
+		B00E4394219F1228004ECC89 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		B00E4396219F1621004ECC89 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		B00E4398219F198D004ECC89 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		B00E439A219F1CC1004ECC89 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		B00E439E219F4C27004ECC89 /* DetailedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedNewsViewController.swift; sourceTree = "<group>"; };
+		B0E99EA121A2BFB30043BC61 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		B0E99EA321A2C0950043BC61 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B0E99EA521A2C3AC0043BC61 /* example.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.rss; sourceTree = "<group>"; };
+		D3BDCF08A7EBD9AF8ED19078 /* Pods-ecology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecology.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecology/Pods-ecology.release.xcconfig"; sourceTree = "<group>"; };
+		D94767BBC7E8D9EA106952C9 /* Pods-ecologyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecologyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecologyTests/Pods-ecologyTests.release.xcconfig"; sourceTree = "<group>"; };
+		E9FCBEC77203D3145A57FBDD /* Pods-ecology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ecology/Pods-ecology.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC08F3582DE2DB892D26444 /* Pods_ecology.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E8111437A61AFABB479240 /* Pods_ecologyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +102,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48014ECAF3AD0667D6EB3931 /* Pods_ecologyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01AEF2318413EC4AF2BA8CC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05CC36FA34A94104AC896AC0 /* Pods_ecology.framework */,
+				A0B08FD491048CA28E010163 /* Pods_ecologyTests.framework */,
+				303FD161BF0A3DCA3A4C9287 /* Pods_ecologyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A458BA7575776B0F8AD8CA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9FCBEC77203D3145A57FBDD /* Pods-ecology.debug.xcconfig */,
+				D3BDCF08A7EBD9AF8ED19078 /* Pods-ecology.release.xcconfig */,
+				70A0342E2FCAE2B99D50A97E /* Pods-ecologyTests.debug.xcconfig */,
+				D94767BBC7E8D9EA106952C9 /* Pods-ecologyTests.release.xcconfig */,
+				528E3C4893EF326417B13C57 /* Pods-ecologyUITests.debug.xcconfig */,
+				47528CAC43CEED4CB77D79A1 /* Pods-ecologyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B00E434F219F0C84004ECC89 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +139,8 @@
 				B00E436F219F0C85004ECC89 /* ecologyTests */,
 				B00E437A219F0C85004ECC89 /* ecologyUITests */,
 				B00E4359219F0C84004ECC89 /* Products */,
+				9A458BA7575776B0F8AD8CA6 /* Pods */,
+				01AEF2318413EC4AF2BA8CC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +157,13 @@
 		B00E435A219F0C84004ECC89 /* ecology */ = {
 			isa = PBXGroup;
 			children = (
-				B00E435B219F0C84004ECC89 /* AppDelegate.swift */,
-				B00E435D219F0C84004ECC89 /* ViewController.swift */,
-				B00E435F219F0C84004ECC89 /* Main.storyboard */,
-				B00E4362219F0C85004ECC89 /* Assets.xcassets */,
-				B00E4364219F0C85004ECC89 /* LaunchScreen.storyboard */,
-				B00E4367219F0C85004ECC89 /* Info.plist */,
+				B0E99EA021A2BF970043BC61 /* Helper */,
+				B00E4391219F11F5004ECC89 /* Network */,
+				B00E438E219F10E4004ECC89 /* Models */,
+				B00E438D219F10DD004ECC89 /* Views */,
+				B00E438C219F0D56004ECC89 /* Controllers */,
+				B00E438A219F0D2D004ECC89 /* Resources */,
+				B00E4389219F0D1E004ECC89 /* Application */,
 			);
 			path = ecology;
 			sourceTree = "<group>";
@@ -125,6 +186,71 @@
 			path = ecologyUITests;
 			sourceTree = "<group>";
 		};
+		B00E4389219F0D1E004ECC89 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B0E99EA521A2C3AC0043BC61 /* example.rss */,
+				B00E435B219F0C84004ECC89 /* AppDelegate.swift */,
+				B00E4367219F0C85004ECC89 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B00E438A219F0D2D004ECC89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B00E4362219F0C85004ECC89 /* Assets.xcassets */,
+				B00E435F219F0C84004ECC89 /* Main.storyboard */,
+				B00E4364219F0C85004ECC89 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B00E438C219F0D56004ECC89 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B00E435D219F0C84004ECC89 /* LaunchViewController.swift */,
+				B00E4398219F198D004ECC89 /* NewsTableViewController.swift */,
+				B00E439A219F1CC1004ECC89 /* MainNavigationController.swift */,
+				B00E439E219F4C27004ECC89 /* DetailedNewsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B00E438D219F10DD004ECC89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B00E4394219F1228004ECC89 /* NewsCell.xib */,
+				B00E4396219F1621004ECC89 /* NewsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B00E438E219F10E4004ECC89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B00E438F219F10EF004ECC89 /* News.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B00E4391219F11F5004ECC89 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B00E4392219F1204004ECC89 /* ParseNews.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B0E99EA021A2BF970043BC61 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B0E99EA121A2BFB30043BC61 /* Structs.swift */,
+				B0E99EA321A2C0950043BC61 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B00E4380219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "ecology" */;
 			buildPhases = (
+				2E15A46BD50A6458867A772D /* [CP] Check Pods Manifest.lock */,
 				B00E4354219F0C84004ECC89 /* Sources */,
 				B00E4355219F0C84004ECC89 /* Frameworks */,
 				B00E4356219F0C84004ECC89 /* Resources */,
+				63512C1BAB70FC9714918833 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B00E4383219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "ecologyTests" */;
 			buildPhases = (
+				E33344CFF2BA92D9E7504578 /* [CP] Check Pods Manifest.lock */,
 				B00E4368219F0C85004ECC89 /* Sources */,
 				B00E4369219F0C85004ECC89 /* Frameworks */,
 				B00E436A219F0C85004ECC89 /* Resources */,
@@ -167,6 +296,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B00E4386219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "ecologyUITests" */;
 			buildPhases = (
+				13D2484D1A6441813E607D7B /* [CP] Check Pods Manifest.lock */,
 				B00E4373219F0C85004ECC89 /* Sources */,
 				B00E4374219F0C85004ECC89 /* Frameworks */,
 				B00E4375219F0C85004ECC89 /* Resources */,
@@ -231,6 +361,8 @@
 			files = (
 				B00E4366219F0C85004ECC89 /* LaunchScreen.storyboard in Resources */,
 				B00E4363219F0C85004ECC89 /* Assets.xcassets in Resources */,
+				B0E99EA621A2C3AC0043BC61 /* example.rss in Resources */,
+				B00E4395219F1228004ECC89 /* NewsCell.xib in Resources */,
 				B00E4361219F0C84004ECC89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,12 +383,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13D2484D1A6441813E607D7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ecologyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E15A46BD50A6458867A772D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ecology-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63512C1BAB70FC9714918833 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ecology/Pods-ecology-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ecology/Pods-ecology-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E33344CFF2BA92D9E7504578 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ecologyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B00E4354219F0C84004ECC89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B00E435E219F0C84004ECC89 /* ViewController.swift in Sources */,
+				B0E99EA221A2BFB30043BC61 /* Structs.swift in Sources */,
+				B00E4390219F10EF004ECC89 /* News.swift in Sources */,
+				B00E435E219F0C84004ECC89 /* LaunchViewController.swift in Sources */,
+				B00E4399219F198D004ECC89 /* NewsTableViewController.swift in Sources */,
+				B00E4397219F1621004ECC89 /* NewsTableViewCell.swift in Sources */,
+				B0E99EA421A2C0950043BC61 /* Constants.swift in Sources */,
+				B00E439B219F1CC1004ECC89 /* MainNavigationController.swift in Sources */,
+				B00E4393219F1204004ECC89 /* ParseNews.swift in Sources */,
+				B00E439F219F4C27004ECC89 /* DetailedNewsViewController.swift in Sources */,
 				B00E435C219F0C84004ECC89 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,11 +649,13 @@
 		};
 		B00E4381219F0C85004ECC89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FCBEC77203D3145A57FBDD /* Pods-ecology.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CX6AZ34SLQ;
-				INFOPLIST_FILE = ecology/Info.plist;
+				INFOPLIST_FILE = ecology/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +669,13 @@
 		};
 		B00E4382219F0C85004ECC89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3BDCF08A7EBD9AF8ED19078 /* Pods-ecology.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CX6AZ34SLQ;
-				INFOPLIST_FILE = ecology/Info.plist;
+				INFOPLIST_FILE = ecology/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +689,7 @@
 		};
 		B00E4384219F0C85004ECC89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A0342E2FCAE2B99D50A97E /* Pods-ecologyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +711,7 @@
 		};
 		B00E4385219F0C85004ECC89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94767BBC7E8D9EA106952C9 /* Pods-ecologyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +733,7 @@
 		};
 		B00E4387219F0C85004ECC89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528E3C4893EF326417B13C57 /* Pods-ecologyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +754,7 @@
 		};
 		B00E4388219F0C85004ECC89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47528CAC43CEED4CB77D79A1 /* Pods-ecologyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
