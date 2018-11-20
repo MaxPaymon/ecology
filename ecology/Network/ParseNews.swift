@@ -33,8 +33,10 @@ class ParseNews {
         Alamofire.request(Constants.url, method: .get).response(completionHandler: { response in
             if response.error == nil {
                 if let xml = SWXMLHash.parse(response.data!) as XMLIndexer? {
+                    print(xml)
                     let news = xml[Xml.news][Xml.item]
                     let countNews = news.all.count
+                    print(countNews)
                     for i in 0..<countNews {
                         
                         guard let dateString = String("\((news[i][Xml.date].element?.text)!) \((news[i][Xml.time].element?.text)!)") as String? else {
@@ -50,6 +52,7 @@ class ParseNews {
                             pictureUrl: (news[i][Xml.picture].element?.text)!,
                             croppedPictureUrl: (news[i][Xml.croppedPicture].element?.text)!)
                         globalNews.append(news)
+                        
                     }
                     globalNews.sort {
                         return $0.timestamp > $1.timestamp

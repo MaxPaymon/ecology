@@ -27,6 +27,7 @@
 		B0E99EA221A2BFB30043BC61 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E99EA121A2BFB30043BC61 /* Structs.swift */; };
 		B0E99EA421A2C0950043BC61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E99EA321A2C0950043BC61 /* Constants.swift */; };
 		B0E99EA621A2C3AC0043BC61 /* example.rss in Resources */ = {isa = PBXBuildFile; fileRef = B0E99EA521A2C3AC0043BC61 /* example.rss */; };
+		B0E99EC321A40DD00043BC61 /* TextNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E99EC221A40DD00043BC61 /* TextNewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		B0E99EA121A2BFB30043BC61 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		B0E99EA321A2C0950043BC61 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B0E99EA521A2C3AC0043BC61 /* example.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.rss; sourceTree = "<group>"; };
+		B0E99EC221A40DD00043BC61 /* TextNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNewsTableViewCell.swift; sourceTree = "<group>"; };
 		D3BDCF08A7EBD9AF8ED19078 /* Pods-ecology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecology.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecology/Pods-ecology.release.xcconfig"; sourceTree = "<group>"; };
 		D94767BBC7E8D9EA106952C9 /* Pods-ecologyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecologyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecologyTests/Pods-ecologyTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9FCBEC77203D3145A57FBDD /* Pods-ecology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ecology/Pods-ecology.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			children = (
 				B00E4394219F1228004ECC89 /* NewsCell.xib */,
 				B00E4396219F1621004ECC89 /* NewsTableViewCell.swift */,
+				B0E99EC221A40DD00043BC61 /* TextNewsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				B00E4397219F1621004ECC89 /* NewsTableViewCell.swift in Sources */,
 				B0E99EA421A2C0950043BC61 /* Constants.swift in Sources */,
 				B00E439B219F1CC1004ECC89 /* MainNavigationController.swift in Sources */,
+				B0E99EC321A40DD00043BC61 /* TextNewsTableViewCell.swift in Sources */,
 				B00E4393219F1204004ECC89 /* ParseNews.swift in Sources */,
 				B00E439F219F4C27004ECC89 /* DetailedNewsViewController.swift in Sources */,
 				B00E435C219F0C84004ECC89 /* AppDelegate.swift in Sources */,
@@ -655,7 +659,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CX6AZ34SLQ;
 				INFOPLIST_FILE = ecology/Application/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -663,7 +667,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.maximskorynin.ecology;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -675,7 +679,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CX6AZ34SLQ;
 				INFOPLIST_FILE = ecology/Application/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -683,7 +687,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.maximskorynin.ecology;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

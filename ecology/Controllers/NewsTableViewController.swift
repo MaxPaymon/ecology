@@ -34,13 +34,13 @@ class NewsTableViewController: UITableViewController {
     }
     
     @objc func refresh() {
-        self.navigationItem.title = "Update..."
+        self.navigationItem.title = "Обновление..."
         ParseNews.parse() { isUpdate in
             if isUpdate {
                 self.allNews = ParseNews.globalNews
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
-                    self.navigationItem.title = "Ecology news"
+                    self.navigationItem.title = "Новости экологии"
                     if self.refresher.isRefreshing {
                         self.refresher.endRefreshing()
                     }

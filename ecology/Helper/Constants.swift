@@ -7,5 +7,5 @@
 //
 
 struct Constants {
-    static let url = "file:///Users/maximskorynin/Documents/Work/freelance/Ecology%20project/test/ecology.rss"
+    static let url = "file:///Users/maximskorynin/Documents/Work/freelance/Ecology%20project/test/ecology.xml"
 }

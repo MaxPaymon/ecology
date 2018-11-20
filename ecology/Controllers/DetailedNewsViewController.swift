@@ -8,37 +8,46 @@
 
 import UIKit
 
-class DetailedNewsViewController: UIViewController {
+class DetailedNewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleNews: UITextView!
     @IBOutlet weak var dateNews: UILabel!
     @IBOutlet weak var pictureNews: UIImageView!
     
-    @IBOutlet weak var fullDescription: UITextView!
     var news : News!
+    let identCell = "TextNewsTableViewCell"
     
     override func viewDidLoad() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         titleNews.text = news.title
         dateNews.text = news.date
         pictureNews.loadPhoto(url: news.pictureUrl)
-        fullDescription.text = news.fullDescription
-        
         setLayouOptions()
     }
     
     func setLayouOptions() {
-        
-        fullDescription.sizeToFit()
-        titleNews.sizeToFit()
-        
-        fullDescription.textContainerInset = UIEdgeInsets(top: 2, left: 8, bottom: 8, right: 8)
-
-        titleNews.layoutIfNeeded()
-        
         self.view.layer.cornerRadius = 4
-        self.title = "Detiled news"
+        self.title = "Новость в деталях"
         self.tableView.layer.cornerRadius = 8
         self.titleNews.sizeToFit()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if news != nil {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: identCell) as? TextNewsTableViewCell else {
+                return UITableViewCell()
+            }
+            cell.configure(news: news)
+            return cell
+        } else {
+            return UITableViewCell()
+        }
     }
 }
