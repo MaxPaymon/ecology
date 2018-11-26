@@ -31,12 +31,12 @@ class ParseNews {
         }
         
         Alamofire.request(Constants.url, method: .get).response(completionHandler: { response in
-            if response.error == nil {
+            if response.error == nil && response.data != nil {
                 if let xml = SWXMLHash.parse(response.data!) as XMLIndexer? {
-                    print(xml)
+//                    print(xml)
                     let news = xml[Xml.news][Xml.item]
                     let countNews = news.all.count
-                    print(countNews)
+//                    print(countNews)
                     for i in 0..<countNews {
                         
                         guard let dateString = String("\((news[i][Xml.date].element?.text)!) \((news[i][Xml.time].element?.text)!)") as String? else {
