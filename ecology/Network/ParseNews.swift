@@ -50,7 +50,8 @@ class ParseNews {
                             fullDescription: (news[i][Xml.description].element?.text)!,
                             date: dateString, timestamp : timestamp,
                             pictureUrl: (news[i][Xml.picture].element?.text)!,
-                            croppedPictureUrl: (news[i][Xml.croppedPicture].element?.text)!)
+                            croppedPictureUrl: (news[i][Xml.croppedPicture].element?.text)!,
+                            link: (news[i][Xml.source].element?.text)!)
                         globalNews.append(news)
                         
                     }

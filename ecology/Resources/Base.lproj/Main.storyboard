@@ -138,7 +138,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextNewsTableViewCell" id="MsG-QJ-hf8" customClass="TextNewsTableViewCell" customModule="ecology" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextNewsTableViewCell" id="MsG-QJ-hf8" customClass="TextNewsTableViewCell" customModule="ecology" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="370" width="359" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MsG-QJ-hf8" id="a8e-x6-5MK">
@@ -165,6 +165,42 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="textView" destination="8fX-HU-GSa" id="nxP-fI-js1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LinkNewsTableViewCell" id="Ix8-Co-cf6" customClass="LinkNewsTableViewCell" customModule="ecology" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="414" width="359" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ix8-Co-cf6" id="6GF-WA-e3G">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Источник:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKP-bA-vuS">
+                                                    <rect key="frame" x="12" y="0.0" width="60" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJa-gR-329">
+                                                    <rect key="frame" x="12" y="16.5" width="339" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="RKP-bA-vuS" firstAttribute="top" secondItem="6GF-WA-e3G" secondAttribute="top" id="2ZY-Qq-fGV"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RKP-bA-vuS" secondAttribute="trailing" constant="20" symbolic="YES" id="717-0p-DsU"/>
+                                                <constraint firstItem="RKP-bA-vuS" firstAttribute="leading" secondItem="6GF-WA-e3G" secondAttribute="leading" constant="12" id="CZH-cL-8Bf"/>
+                                                <constraint firstItem="rJa-gR-329" firstAttribute="top" secondItem="RKP-bA-vuS" secondAttribute="bottom" constant="2" id="IK2-Nb-RS0"/>
+                                                <constraint firstAttribute="trailing" secondItem="rJa-gR-329" secondAttribute="trailing" constant="8" id="MAy-yH-u9p"/>
+                                                <constraint firstItem="rJa-gR-329" firstAttribute="leading" secondItem="6GF-WA-e3G" secondAttribute="leading" constant="12" id="YHc-ze-71Q"/>
+                                                <constraint firstAttribute="bottom" secondItem="rJa-gR-329" secondAttribute="bottom" constant="8" id="lF8-6S-iEv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="link" destination="rJa-gR-329" id="5cM-gM-2fk"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

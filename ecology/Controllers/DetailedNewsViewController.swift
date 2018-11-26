@@ -16,7 +16,6 @@ class DetailedNewsViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var pictureNews: UIImageView!
     
     var news : News!
-    let identCell = "TextNewsTableViewCell"
     
     override func viewDidLoad() {
         tableView.delegate = self
@@ -36,18 +35,33 @@ class DetailedNewsViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if news != nil {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: identCell) as? TextNewsTableViewCell else {
-                return UITableViewCell()
+            if indexPath.row == 0 {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: Cell.text) as? TextNewsTableViewCell else {
+                    return UITableViewCell()
+                }
+                cell.configure(news: news)
+                return cell
+            } else {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: Cell.link) as? LinkNewsTableViewCell else {
+                    return UITableViewCell()
+                }
+                cell.configure(news: news)
+                return cell
             }
-            cell.configure(news: news)
-            return cell
         } else {
             return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 1 {
+            guard let url = URL(string: news.link) else { return }
+            UIApplication.shared.open(url)
         }
     }
 }

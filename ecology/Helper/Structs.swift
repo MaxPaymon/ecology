@@ -27,4 +27,10 @@ struct Xml {
     static let time = "time"
     static let croppedPicture = "croppedpicture"
     static let picture = "picture"
+    static let source = "source"
+}
+
+struct Cell {
+    static let text = "TextNewsTableViewCell"
+    static let link = "LinkNewsTableViewCell"
 }

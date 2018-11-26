@@ -16,8 +16,9 @@ class News {
     var pictureUrl : String!
     var croppedPictureUrl : String!
     var timestamp : Int!
+    var link : String!
     
-    public init(title: String, shortDescription: String, fullDescription : String!, date: String, timestamp : Int, pictureUrl: String, croppedPictureUrl:String) {
+    public init(title: String, shortDescription: String, fullDescription : String!, date: String, timestamp : Int, pictureUrl: String, croppedPictureUrl:String, link : String) {
         self.title = title
         self.date = date
         self.timestamp = timestamp
@@ -25,5 +26,6 @@ class News {
         self.fullDescription = fullDescription
         self.pictureUrl = pictureUrl
         self.croppedPictureUrl = croppedPictureUrl
+        self.link = link
     }
 }
