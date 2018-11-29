@@ -26,7 +26,6 @@
 		B0D26B8621ABD49E00C10516 /* LinkNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D26B8521ABD49E00C10516 /* LinkNewsTableViewCell.swift */; };
 		B0E99EA221A2BFB30043BC61 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E99EA121A2BFB30043BC61 /* Structs.swift */; };
 		B0E99EA421A2C0950043BC61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E99EA321A2C0950043BC61 /* Constants.swift */; };
-		B0E99EA621A2C3AC0043BC61 /* example.rss in Resources */ = {isa = PBXBuildFile; fileRef = B0E99EA521A2C3AC0043BC61 /* example.rss */; };
 		B0E99EC321A40DD00043BC61 /* TextNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E99EC221A40DD00043BC61 /* TextNewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,16 +53,16 @@
 		528E3C4893EF326417B13C57 /* Pods-ecologyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecologyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ecologyUITests/Pods-ecologyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		70A0342E2FCAE2B99D50A97E /* Pods-ecologyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecologyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ecologyTests/Pods-ecologyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0B08FD491048CA28E010163 /* Pods_ecologyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecologyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B00E4358219F0C84004ECC89 /* games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = games.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00E4358219F0C84004ECC89 /* gamenews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gamenews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00E435B219F0C84004ECC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B00E435D219F0C84004ECC89 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		B00E4360219F0C84004ECC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B00E4362219F0C85004ECC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00E4367219F0C85004ECC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B00E436C219F0C85004ECC89 /* gamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00E436C219F0C85004ECC89 /* gamenewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gamenewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00E4370219F0C85004ECC89 /* ecologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ecologyTests.swift; sourceTree = "<group>"; };
 		B00E4372219F0C85004ECC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B00E4377219F0C85004ECC89 /* gamesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gamesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00E4377219F0C85004ECC89 /* gamenewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gamenewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00E437B219F0C85004ECC89 /* ecologyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ecologyUITests.swift; sourceTree = "<group>"; };
 		B00E437D219F0C85004ECC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00E438F219F10EF004ECC89 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
@@ -76,7 +75,6 @@
 		B0D26B8521ABD49E00C10516 /* LinkNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkNewsTableViewCell.swift; sourceTree = "<group>"; };
 		B0E99EA121A2BFB30043BC61 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		B0E99EA321A2C0950043BC61 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B0E99EA521A2C3AC0043BC61 /* example.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.rss; sourceTree = "<group>"; };
 		B0E99EC221A40DD00043BC61 /* TextNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNewsTableViewCell.swift; sourceTree = "<group>"; };
 		D3BDCF08A7EBD9AF8ED19078 /* Pods-ecology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecology.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecology/Pods-ecology.release.xcconfig"; sourceTree = "<group>"; };
 		D94767BBC7E8D9EA106952C9 /* Pods-ecologyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecologyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecologyTests/Pods-ecologyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,9 +135,9 @@
 		B00E434F219F0C84004ECC89 = {
 			isa = PBXGroup;
 			children = (
-				B00E435A219F0C84004ECC89 /* games */,
-				B00E436F219F0C85004ECC89 /* ecologyTests */,
-				B00E437A219F0C85004ECC89 /* ecologyUITests */,
+				B00E435A219F0C84004ECC89 /* gamenews */,
+				B00E436F219F0C85004ECC89 /* gamenewsTests */,
+				B00E437A219F0C85004ECC89 /* gamenewsUITests */,
 				B00E4359219F0C84004ECC89 /* Products */,
 				9A458BA7575776B0F8AD8CA6 /* Pods */,
 				01AEF2318413EC4AF2BA8CC4 /* Frameworks */,
@@ -149,14 +147,14 @@
 		B00E4359219F0C84004ECC89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B00E4358219F0C84004ECC89 /* games.app */,
-				B00E436C219F0C85004ECC89 /* gamesTests.xctest */,
-				B00E4377219F0C85004ECC89 /* gamesUITests.xctest */,
+				B00E4358219F0C84004ECC89 /* gamenews.app */,
+				B00E436C219F0C85004ECC89 /* gamenewsTests.xctest */,
+				B00E4377219F0C85004ECC89 /* gamenewsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B00E435A219F0C84004ECC89 /* games */ = {
+		B00E435A219F0C84004ECC89 /* gamenews */ = {
 			isa = PBXGroup;
 			children = (
 				B0E99EA021A2BF970043BC61 /* Helper */,
@@ -167,31 +165,30 @@
 				B00E438A219F0D2D004ECC89 /* Resources */,
 				B00E4389219F0D1E004ECC89 /* Application */,
 			);
-			path = games;
+			path = gamenews;
 			sourceTree = "<group>";
 		};
-		B00E436F219F0C85004ECC89 /* ecologyTests */ = {
+		B00E436F219F0C85004ECC89 /* gamenewsTests */ = {
 			isa = PBXGroup;
 			children = (
 				B00E4370219F0C85004ECC89 /* ecologyTests.swift */,
 				B00E4372219F0C85004ECC89 /* Info.plist */,
 			);
-			path = ecologyTests;
+			path = gamenewsTests;
 			sourceTree = "<group>";
 		};
-		B00E437A219F0C85004ECC89 /* ecologyUITests */ = {
+		B00E437A219F0C85004ECC89 /* gamenewsUITests */ = {
 			isa = PBXGroup;
 			children = (
 				B00E437B219F0C85004ECC89 /* ecologyUITests.swift */,
 				B00E437D219F0C85004ECC89 /* Info.plist */,
 			);
-			path = ecologyUITests;
+			path = gamenewsUITests;
 			sourceTree = "<group>";
 		};
 		B00E4389219F0D1E004ECC89 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				B0E99EA521A2C3AC0043BC61 /* example.rss */,
 				B00E435B219F0C84004ECC89 /* AppDelegate.swift */,
 				B00E4367219F0C85004ECC89 /* Info.plist */,
 			);
@@ -257,9 +254,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B00E4357219F0C84004ECC89 /* games */ = {
+		B00E4357219F0C84004ECC89 /* gamenews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B00E4380219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "games" */;
+			buildConfigurationList = B00E4380219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "gamenews" */;
 			buildPhases = (
 				2E15A46BD50A6458867A772D /* [CP] Check Pods Manifest.lock */,
 				B00E4354219F0C84004ECC89 /* Sources */,
@@ -271,14 +268,14 @@
 			);
 			dependencies = (
 			);
-			name = games;
+			name = gamenews;
 			productName = ecology;
-			productReference = B00E4358219F0C84004ECC89 /* games.app */;
+			productReference = B00E4358219F0C84004ECC89 /* gamenews.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B00E436B219F0C85004ECC89 /* gamesTests */ = {
+		B00E436B219F0C85004ECC89 /* gamenewsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B00E4383219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "gamesTests" */;
+			buildConfigurationList = B00E4383219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "gamenewsTests" */;
 			buildPhases = (
 				E33344CFF2BA92D9E7504578 /* [CP] Check Pods Manifest.lock */,
 				B00E4368219F0C85004ECC89 /* Sources */,
@@ -290,14 +287,14 @@
 			dependencies = (
 				B00E436E219F0C85004ECC89 /* PBXTargetDependency */,
 			);
-			name = gamesTests;
+			name = gamenewsTests;
 			productName = ecologyTests;
-			productReference = B00E436C219F0C85004ECC89 /* gamesTests.xctest */;
+			productReference = B00E436C219F0C85004ECC89 /* gamenewsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B00E4376219F0C85004ECC89 /* gamesUITests */ = {
+		B00E4376219F0C85004ECC89 /* gamenewsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B00E4386219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "gamesUITests" */;
+			buildConfigurationList = B00E4386219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "gamenewsUITests" */;
 			buildPhases = (
 				13D2484D1A6441813E607D7B /* [CP] Check Pods Manifest.lock */,
 				B00E4373219F0C85004ECC89 /* Sources */,
@@ -309,9 +306,9 @@
 			dependencies = (
 				B00E4379219F0C85004ECC89 /* PBXTargetDependency */,
 			);
-			name = gamesUITests;
+			name = gamenewsUITests;
 			productName = ecologyUITests;
-			productReference = B00E4377219F0C85004ECC89 /* gamesUITests.xctest */;
+			productReference = B00E4377219F0C85004ECC89 /* gamenewsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -337,7 +334,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B00E4353219F0C84004ECC89 /* Build configuration list for PBXProject "games" */;
+			buildConfigurationList = B00E4353219F0C84004ECC89 /* Build configuration list for PBXProject "gamenews" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -350,9 +347,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B00E4357219F0C84004ECC89 /* games */,
-				B00E436B219F0C85004ECC89 /* gamesTests */,
-				B00E4376219F0C85004ECC89 /* gamesUITests */,
+				B00E4357219F0C84004ECC89 /* gamenews */,
+				B00E436B219F0C85004ECC89 /* gamenewsTests */,
+				B00E4376219F0C85004ECC89 /* gamenewsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -363,7 +360,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B00E4363219F0C85004ECC89 /* Assets.xcassets in Resources */,
-				B0E99EA621A2C3AC0043BC61 /* example.rss in Resources */,
 				B00E4395219F1228004ECC89 /* NewsCell.xib in Resources */,
 				B00E4361219F0C84004ECC89 /* Main.storyboard in Resources */,
 			);
@@ -505,12 +501,12 @@
 /* Begin PBXTargetDependency section */
 		B00E436E219F0C85004ECC89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B00E4357219F0C84004ECC89 /* games */;
+			target = B00E4357219F0C84004ECC89 /* gamenews */;
 			targetProxy = B00E436D219F0C85004ECC89 /* PBXContainerItemProxy */;
 		};
 		B00E4379219F0C85004ECC89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B00E4357219F0C84004ECC89 /* games */;
+			target = B00E4357219F0C84004ECC89 /* gamenews */;
 			targetProxy = B00E4378219F0C85004ECC89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -648,16 +644,18 @@
 			baseConfigurationReference = E9FCBEC77203D3145A57FBDD /* Pods-ecology.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CX6AZ34SLQ;
-				INFOPLIST_FILE = games/Application/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q4AAM2ZWV5;
+				INFOPLIST_FILE = gamenews/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maximskorynin.games;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stanislavboiko.gamenews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ProvisioningProfileStanislav;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -668,16 +666,18 @@
 			baseConfigurationReference = D3BDCF08A7EBD9AF8ED19078 /* Pods-ecology.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CX6AZ34SLQ;
-				INFOPLIST_FILE = games/Application/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q4AAM2ZWV5;
+				INFOPLIST_FILE = gamenews/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maximskorynin.games;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stanislavboiko.gamenews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ProvisioningProfileStanislav;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -701,7 +701,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/games.app/games";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gamenews.app/gamenews";
 			};
 			name = Debug;
 		};
@@ -723,7 +723,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/games.app/games";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gamenews.app/gamenews";
 			};
 			name = Release;
 		};
@@ -772,7 +772,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B00E4353219F0C84004ECC89 /* Build configuration list for PBXProject "games" */ = {
+		B00E4353219F0C84004ECC89 /* Build configuration list for PBXProject "gamenews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B00E437E219F0C85004ECC89 /* Debug */,
@@ -781,7 +781,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B00E4380219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "games" */ = {
+		B00E4380219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "gamenews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B00E4381219F0C85004ECC89 /* Debug */,
@@ -790,7 +790,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B00E4383219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "gamesTests" */ = {
+		B00E4383219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "gamenewsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B00E4384219F0C85004ECC89 /* Debug */,
@@ -799,7 +799,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B00E4386219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "gamesUITests" */ = {
+		B00E4386219F0C85004ECC89 /* Build configuration list for PBXNativeTarget "gamenewsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B00E4387219F0C85004ECC89 /* Debug */,

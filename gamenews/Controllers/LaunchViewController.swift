@@ -17,7 +17,7 @@ class LaunchViewController: UIViewController {
             if isUpdate {
                 self.showNewsList()
             } else {
-                let alert = UIAlertController(title: "Новости экологии", message: "Извините, но сегодня список новостей пуст", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Новости игровой индустрии", message: "Извините, но сегодня список новостей пуст", preferredStyle: .alert)
                 let ok = UIAlertAction(title: "OK", style: .default, handler: { _ in
                     self.showNewsList()
                 })

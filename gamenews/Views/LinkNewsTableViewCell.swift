@@ -1,15 +1,16 @@
 //
-//  TextNewsTableViewCell.swift
+//  LinkNewsTableViewCell.swift
 //  ecology
 //
-//  Created by Maxim Skorynin on 20/11/2018.
+//  Created by Maxim Skorynin on 26/11/2018.
 //  Copyright © 2018 Maxim Skorynin. All rights reserved.
 //
 
 import UIKit
 
-class TextNewsTableViewCell: UITableViewCell {
-    @IBOutlet weak var textView: UITextView!
+class LinkNewsTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var link: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,7 +18,7 @@ class TextNewsTableViewCell: UITableViewCell {
     }
     
     func configure(news : News) {
-        self.textView.text = news.fullDescription
+        self.link.text = news.link
     }
-
+    
 }
