@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
-class MainNavigationController: UINavigationController {
-    
+class MainTabBarController: UITabBarController {
+    override func viewDidLoad() {
+        self.tabBar.barStyle = !User.shared.isNightMode ? .default : .black
+    }
 }

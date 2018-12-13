@@ -18,6 +18,7 @@ struct Vc {
 }
 
 struct Xml {
+    static let id = "id"
     static let news = "news"
     static let item = "item"
     static let title = "title"
@@ -33,4 +34,5 @@ struct Xml {
 struct Cell {
     static let text = "TextNewsTableViewCell"
     static let link = "LinkNewsTableViewCell"
+    static let newsCell = "NewsCell"
 }

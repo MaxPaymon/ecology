@@ -7,25 +7,35 @@
 //
 
 import UIKit
+import CoreStore
 
-class NewsTableViewController: UITableViewController {
+class NewsTableViewController: UITableViewController, ListObjectObserver {
     
     @IBOutlet weak var searchBar: UISearchBar!
-    let identCell = "NewsCell"
-    var allNews : [News] = []
+    
+    typealias ListEntityType = NewsData
+    var allNews : ListMonitor<NewsData>!
     
     var refresher : UIRefreshControl!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if allNews != nil {
+            allNews.addObserver(self)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         self.view.layer.cornerRadius = 4
         
-        let nib = UINib.init(nibName: identCell, bundle: nil)
-        self.tableView.register(nib, forCellReuseIdentifier: identCell)
+        let nib = UINib.init(nibName: Cell.newsCell, bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: Cell.newsCell)
         
-        allNews = ParseNews.globalNews
+        allNews = NewsDataManager.shared.getAllNews()
+        allNews.addObserver(self)
         
+        setLayoutOptions()
         refresher = UIRefreshControl()
         refresher.tintColor = UIColor.white.withAlphaComponent(0.8)
         refresher.addTarget(self, action: #selector(self.refresh), for: UIControl.Event.valueChanged)
@@ -33,11 +43,44 @@ class NewsTableViewController: UITableViewController {
         
     }
     
+    func setLayoutOptions() {
+        self.tableView.backgroundColor = UIColor.Default.background
+        self.navigationController?.navigationBar.barStyle = !User.shared.isNightMode ? .default : .black
+    }
+    
+    func listMonitorDidRefetch(_ monitor: ListMonitor<NewsData>) {
+        self.tableView.reloadData()
+    }
+    
+    func listMonitorWillChange(_ monitor: ListMonitor<NewsData>) {
+        self.tableView.beginUpdates()
+    }
+    
+    func listMonitorDidChange(_ monitor: ListMonitor<NewsData>) {
+        self.tableView.endUpdates()
+    }
+    
+    func listMonitor(_ monitor: ListMonitor<NewsData>, didInsertObject object: NewsData, toIndexPath indexPath: IndexPath) {
+//        self.tableView.insertRows(at: [indexPath], with: .none)
+    }
+    
+    func listMonitor(_ monitor: ListMonitor<NewsData>, didDeleteObject object: NewsData, fromIndexPath indexPath: IndexPath) {
+//        self.tableView.deleteRows(at: [indexPath], with: .left)
+    }
+    
+    func listMonitor(_ monitor: ListMonitor<NewsData>, didUpdateObject object: NewsData, atIndexPath indexPath: IndexPath) {
+        let news = allNews[indexPath]
+        
+        if let cell = self.tableView.cellForRow(at: indexPath) as? NewsTableViewCell {
+            cell.configure(news: news)
+        }
+    }
+    
     @objc func refresh() {
         self.navigationItem.title = "Обновление..."
         ParseNews.parse() { isUpdate in
             if isUpdate {
-                self.allNews = ParseNews.globalNews
+                self.allNews = NewsDataManager.shared.getAllNews()
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                     self.navigationItem.title = "Новости игровой индустрии"
@@ -51,8 +94,8 @@ class NewsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let news = allNews[indexPath.row] as News? {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: identCell) as? NewsTableViewCell else {
+        if let news = allNews[indexPath.row] as NewsData? {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: Cell.newsCell) as? NewsTableViewCell else {
                 return UITableViewCell()
             }
             cell.configure(news: news)
@@ -63,7 +106,7 @@ class NewsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allNews.count
+        return allNews.numberOfObjects()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -76,4 +119,5 @@ class NewsTableViewController: UITableViewController {
         detailedNewsVC.news = allNews[indexPath.row]
         self.navigationController?.pushViewController(detailedNewsVC, animated: true)
     }
+
 }

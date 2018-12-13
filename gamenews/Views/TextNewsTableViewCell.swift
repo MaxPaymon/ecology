@@ -11,8 +11,16 @@ import UIKit
 class TextNewsTableViewCell: UITableViewCell {
     @IBOutlet weak var textView: UITextView!
     
-    func configure(news : News) {
-        self.textView.text = news.fullDescription
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        self.textView.textColor = UIColor.Default.text
+        textView.font = textView.font?.withSize((textView.font?.pointSize)! + CGFloat(User.shared.fontSize))
+
+    }
+    
+    func configure(news : NewsData) {
+        self.textView.text = news.fullDesc
     }
 
 }

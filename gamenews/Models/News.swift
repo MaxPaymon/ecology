@@ -9,16 +9,18 @@
 import Foundation
 
 class News {
+    var id : Int64!
     var date : String!
     var title : String!
     var shortDescription : String!
     var fullDescription : String!
     var pictureUrl : String!
     var croppedPictureUrl : String!
-    var timestamp : Int!
+    var timestamp : Int64!
     var link : String!
     
-    public init(title: String, shortDescription: String, fullDescription : String!, date: String, timestamp : Int, pictureUrl: String, croppedPictureUrl:String, link : String) {
+    public init(id : Int64, title: String, shortDescription: String, fullDescription : String!, date: String, timestamp : Int64, pictureUrl: String, croppedPictureUrl:String, link : String) {
+        self.id = id
         self.title = title
         self.date = date
         self.timestamp = timestamp

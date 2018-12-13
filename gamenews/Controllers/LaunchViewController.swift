@@ -13,20 +13,28 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
-        ParseNews.parse() { isUpdate in
-            if isUpdate {
-                self.showNewsList()
-            } else {
-                let alert = UIAlertController(title: "Новости игровой индустрии", message: "Извините, но сегодня список новостей пуст", preferredStyle: .alert)
-                let ok = UIAlertAction(title: "OK", style: .default, handler: { _ in
-                    self.showNewsList()
-                })
-                alert.addAction(ok)
-                DispatchQueue.main.async {
-                    self.present(alert, animated: true, completion: nil)
+        CacheManager.shared.initDb() { isCreated in
+            if isCreated {
+                ParseNews.parse() { isUpdate in
+                    if isUpdate {
+                        self.showNewsList()
+                    } else {
+                        let alert = UIAlertController(title: "Новости игровой индустрии", message: "Не удалось загрузить новые новости, проверьте подключение к сети", preferredStyle: .alert)
+                        let ok = UIAlertAction(title: "OK", style: .default, handler: { _ in
+                            self.showNewsList()
+                        })
+                        alert.addAction(ok)
+                        DispatchQueue.main.async {
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                    }
                 }
+            } else {
+                self.showAlertOk(title: "Ошибка", message: "Перезапустите приложение")
             }
         }
+        
+        
     }
     
     func showNewsList() {

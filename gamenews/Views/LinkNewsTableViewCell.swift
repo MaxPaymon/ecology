@@ -11,13 +11,17 @@ import UIKit
 class LinkNewsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var link: UILabel!
+    @IBOutlet weak var hint: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        hint.textColor = UIColor.Default.date
+        hint.font = hint.font?.withSize((hint.font?.pointSize)! + CGFloat(User.shared.fontSize))
+        link.font = link.font?.withSize((link.font?.pointSize)! + CGFloat(User.shared.fontSize))
+
     }
     
-    func configure(news : News) {
+    func configure(news : NewsData) {
         self.link.text = news.link
     }
     

@@ -7,5 +7,5 @@
 //
 
 struct Constants {
-    static let url = "https://raw.githubusercontent.com/ap-consulting/serverxml/master/ecology%20(bas).xml"
+    static let url = "https://raw.githubusercontent.com/ap-consulting/serverxml/master/gamingnews.xml"
 }

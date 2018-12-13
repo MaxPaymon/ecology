@@ -12,23 +12,19 @@ import SWXMLHash
 
 class ParseNews {
     
-    static var globalNews : [News] = []
+//    static var globalNews : [News] = []
     
-    static func formatTime(dateString: String) -> Int {
+    static func formatTime(dateString: String) -> Int64 {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat="dd.MM.yyyy HH:mm"
         if let date = dateFormatter.date(from: dateString) {
             let timestamp:Int = Int(date.timeIntervalSince1970)
-            return timestamp
+            return Int64(timestamp)
         }
-        return Int(Date().timeIntervalSinceNow)
+        return Int64(Date().timeIntervalSinceNow)
     }
     
     public static func parse(completionHandler: @escaping (Bool) -> ()) {
-        
-        if globalNews.count > 0 {
-            globalNews.removeAll()
-        }
         
         Alamofire.request(Constants.url, method: .get).response(completionHandler: { response in
             if response.error == nil && response.data != nil {
@@ -37,6 +33,7 @@ class ParseNews {
                     let news = xml[Xml.news][Xml.item]
                     let countNews = news.all.count
 //                    print(countNews)
+                    var loadedNews : [News] = []
                     for i in 0..<countNews {
                         
                         guard let dateString = String("\((news[i][Xml.date].element?.text)!) \((news[i][Xml.time].element?.text)!)") as String? else {
@@ -45,6 +42,7 @@ class ParseNews {
                         
                         let timestamp = formatTime(dateString: dateString)
                         let news = News(
+                            id : Int64((news[i][Xml.id].element?.text)!)!,
                             title:(news[i][Xml.title].element?.text)!,
                             shortDescription: (news[i][Xml.shortdescription].element?.text)!,
                             fullDescription: (news[i][Xml.description].element?.text)!,
@@ -52,12 +50,14 @@ class ParseNews {
                             pictureUrl: (news[i][Xml.picture].element?.text)!,
                             croppedPictureUrl: (news[i][Xml.croppedPicture].element?.text)!,
                             link: (news[i][Xml.source].element?.text)!)
-                        globalNews.append(news)
+                        loadedNews.append(news)
                         
                     }
-                    globalNews.sort {
-                        return $0.timestamp > $1.timestamp
+                    
+                    for news in loadedNews {
+                        NewsDataManager.shared.updateOrCreateUser(newsObject: news)
                     }
+                    
                     completionHandler(true)
                 } else {
                     completionHandler(false)
